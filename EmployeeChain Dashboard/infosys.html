@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>INFOSYS Portal</title>
+   <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="http://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+      <style>
+  #particles-js{
+  background-color: #e88312;
+  height:500px;
+  background-image: url('../infosys.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}  
+  </style>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+  
+	  <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center"> Infosys <small>Employee-Portal</small></h1>
+			 <h4 class="text-center">0x170e84b0990811508b9303f838457b9871071adc</h4>
+          </div>
+        </div>
+      </div>
+    </header>
+	 <section id="welcome">
+	   <h1  style=" text-align: center;";>Welcome to Infosys Employee Portal</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+		    <div class="col-md-6">
+				  <div class="panel panel-default">
+								<div class="panel-heading main-color-bg">
+									<h3 class="panel-title">View Employee Details</h3>
+								</div>
+						<div class="panel-body">
+						<div class="well">
+						<div>
+						<label>Employee-AccountAddress</label> <input type="text" class="form-control"
+						id="empAdd" placeholder="paste the Employee address details" >
+					    </div>
+						 <button id = "details" class="btn btn-danger btn-block">Submit</button>
+						<br> 
+						<div>
+						<label>FullName</label> <input type="text" class="form-control"
+						id="fullname" placeholder="Name Registred in Blockchain" >
+						</div>
+						<br> 
+						<div>
+						<label>Experience</label> <input type="text" class="form-control"
+						id="experience" placeholder="Name Registred in Blockchain" >
+						</div>
+						<br> 
+						<div>
+						<label>Specialization</label> <input type="text" class="form-control"
+						id="specialization" placeholder="Name Registred in Blockchain" >
+						</div>
+						<br> 
+						<div>
+						<label>Phone</label> <input type="text" class="form-control"
+						id="phone" placeholder="Name Registred in Blockchain" >
+						</div>
+						<br> 
+						<div>
+						<label>Account Creator</label> <input type="text" class="form-control"
+						id="creator" placeholder="Name Registred in Blockchain" >
+						</div>
+					
+						</div>
+						
+						</div>
+				  </div>
+			</div>	
+			<div class="col-md-3">
+				  <div class="panel panel-default">
+								<div class="panel-heading main-color-bg">
+									<h3 class="panel-title">Operations</h3>
+								</div>
+						<div class="panel-body">
+						<div class="well">
+						  <a href="http://localhost:8082/"><button class="btn btn-danger btn-block">Add NEw Employee</button></a>
+						</div>												
+				  </div>
+			</div>			
+		  </div>
+		  
+		  <div class="col-md-3">
+				  <div class="panel panel-default">
+								<div class="panel-heading main-color-bg">
+									<h3 class="panel-title">Operations</h3>
+								</div>
+						<div class="panel-body">													
+						<div class="well">
+						 <a href="http://localhost:8082/"><button class="btn btn-danger btn-block">Update Employee</button></a>
+						</div>
+				  </div>
+			</div>			
+		  </div>
+		  
+        </div>
+      </div>
+    </section>	
+       <section id="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+		  <div class="panel panel-default">
+						<div class="panel-heading main-color-bg">
+							<h3 class="panel-title">Credentials are stored in Blockchain</h3>
+						</div>
+				<div class="panel-body">
+				<div class="well">
+                  <div>
+                    <label>AccountAddress</label> <input type="text" class="form-control"
+					id="aa" placeholder="paste the address details" >
+                  </div>
+				  <div>
+                    <label>Username</label> <input type="text" class="form-control"
+					id="idl" placeholder="Name Registred in Blockchain" #id>
+                  </div>
+                  <div>
+                    <label>Password</label> <input type="password"
+					class="form-control" id="password" placeholder="Password Registred in Blockchain">                 
+				 </div>
+				</div>
+                  <button  id="pd" class="btn btn-default btn-block">Login</button> 
+				</div>
+          </div>
+		  </div>
+        </div>
+      </div>
+    </section>
+<nav class="navbar navbar-default" style="background-color:blue;">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/ustglobal">USTGlobal</a>
+		  <a class="navbar-brand" href="/tcs">TCS</a>
+		  <a class="navbar-brand" href="/alliance">Alliance</a>
+		  <a class="navbar-brand" href="/">DashBoard</a>
+		  <a class="navbar-brand" href="/ustglobal">Logout</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+<script>// Same contract for all 4 websites	
+		var button = document.getElementById('pd');	
+		var main = $('#main');
+		var welcome = $('#welcome');			
+		button.addEventListener('click', function() {
+					var AccContract = web3.eth.contract([{"constant":false,"inputs":[],"name":"GetCount","outputs":[{"name":"","type":"uint8"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"Phone","type":"uint256"},{"name":"Name","type":"string"},{"name":"Password","type":"string"}],"name":"addNewAccount","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"CountNo","type":"uint8"}],"name":"getAccount","outputs":[{"name":"","type":"string"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"string"}],"payable":false,"type":"function"}]);			
+					var Acc = AccContract.at(aa.value);	
+					Acc.GetCount.call(function (error, Count){
+					Acc.getAccount.call(Count-1,function(err, res){
+					console.log(res)
+					var one = password.value;
+					var two = res[3];
+					if( one === two ){
+					alert("Succeccfully Authenticated");
+					pd.innerHTML = "<h4 style='color:green'>Succeccfully Authenticated</h4>";
+					 setTimeout(function(){
+							 main.hide();
+							welcome.show();							 
+									},2000);
+														
+					}else {
+					alert("User Credentials are wrong")
+					pd.innerHTML = "<h4 style='color:red'>User Credentials are wrong</h4>";	
+					}
+					 
+				});
+				});
+	
+			
+		});
+		
+		var details = document.getElementById('details');
+		details.addEventListener('click', function() {
+		var EmpContract=web3.eth.contract([{"constant":false,"inputs":[],"name":"GetCount","outputs":[{"name":"","type":"uint8"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"CountNo","type":"uint8"},{"name":"pass","type":"uint256"},{"name":"experience","type":"uint256"},{"name":"specialization","type":"string"},{"name":"phone","type":"uint256"},{"name":"recordCreatorName","type":"string"}],"name":"updateAccount","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"CountNo","type":"uint8"}],"name":"getAccount","outputs":[{"name":"","type":"string"},{"name":"","type":"uint256"},{"name":"","type":"string"},{"name":"","type":"uint256"},{"name":"","type":"string"},{"name":"","type":"uint256"},{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"pass","type":"uint256"},{"name":"fullName","type":"string"},{"name":"experience","type":"uint256"},{"name":"specialization","type":"string"},{"name":"phone","type":"uint256"},{"name":"recordCreatorName","type":"string"}],"name":"addNewAccount","outputs":[],"payable":false,"type":"function"}]);			
+					var Emp = EmpContract.at(empAdd.value);
+					Emp.GetCount.call(function (error, Count){
+					Emp.getAccount.call(Count-1,function(err, res){
+					console.log(res)
+					document.getElementById("fullname").value=res[0];
+					document.getElementById("experience").value=res[1];
+					document.getElementById("specialization").value=res[2];
+					document.getElementById("phone").value=res[3];
+					document.getElementById("creator").value=res[4];					
+					
+						});
+					});
+		
+		});
+		
+		
+		
+		
+		
+		
+	</script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  <script src="./particles.js"></script>
+  <script src="./particlesjsn.js"></script>
+</body>
+</html>

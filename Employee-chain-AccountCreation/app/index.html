@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EmployeeChain</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<style>
+    .margin-top-1 {
+      margin-top: 1em;
+    }
+	body {
+    background-image: url("http://cdn.wallpapersafari.com/76/25/ZbVEyH.jpg");
+   
+	}
+  </style>
+  <script src="./app.js"></script>
+</head>
+
+<body>
+   <h1 style="color:white ">EmployeeChain</h1>
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#sectionA" ><i class="fa fa-user"></i>Employee Record Creation</a></li>
+        <li><a data-toggle="tab" href="#sectionB" ><i class="fa fa-user"></i>Employee Record Updation</a></li>       
+    </ul>
+    <div class="tab-content">
+        <div id="sectionA" class="tab-pane fade in active">
+           <div class="panel panel-primary margin-top-1">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Employee Record Creation</h3>
+						<h6 style='color:orange; font-size:175%;' id="res"></h6>
+                </div>
+                <div class="panel-body">
+				<br> <label for="contractAddress">Contract Address:</label> <input type="text" id="contractAddress" placeholder="create a new contract"></input>
+				<br> <label for="fullname">fullName:</label> <input type="text" id="fullname" placeholder="Enter fullname"></input>
+				<br> <label for="experience">experience:</label> <input type="text" id="experience" placeholder="Enter experience"></input>
+				<br> <label for="specialization">specialization:</label> <input type="text" id="specialization" placeholder="Enter specialization"></input>
+				<br> <label for="phone">Phone:</label> <input type="text" id="phone" placeholder="Enter Phone no"></input>				
+				<br> <label for="creator">recordCreator Name:</label> <input type="text" id="creator" placeholder="Ex: USTGlobal"></input>
+				<br> <label for="code">Secret Code:</label> <input type="text" id="code" placeholder="Enter Secret Code"></input>						
+                   <div class="col-md-12">
+				   
+							<div class="col-md-6">
+                           <br> <br>
+                              <button id="createContract" class="btn btn-primary" onclick="App.createContract()">Create New Contract</button>
+                            </div>
+							<div class="col-md-6">   
+                           <br> <br>
+                        
+                             <button id="addNewAccount" class="btn btn-primary" onclick="App.addNewAccount()">Add New Account</button>
+							</div>
+                  </div>
+                </div>
+            </div> 
+        </div>
+        <div id="sectionB" class="tab-pane fade">
+            <div class="panel panel-primary margin-top-1">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Employee Record Updation</h3>
+					<h6 style='color:orange; font-size:175%;' id="res1"></h6>
+                </div>
+                <div class="panel-body">
+				<br> <label for="contractAddress1">Contract Address:</label> <input type="text" id="contractAddress1" placeholder="create a new contract"></input>				
+				<br> <label for="experience1">experience:</label> <input type="text" id="experience1" placeholder="Enter experience"></input>
+				<br> <label for="specialization1">specialization:</label> <input type="text" id="specialization1" placeholder="Enter specialization"></input>
+				<br> <label for="phone1">Phone:</label> <input type="text" id="phone1" placeholder="Enter Phone no"></input>				
+				<br> <label for="creator1">recordCreator Name:</label> <input type="text" id="creator1" placeholder="Ex: USTGlobal"></input>
+				<br> <label for="code1">Secret Code:</label> <input type="text" id="code1" placeholder="Enter Secret Code"></input>						
+                   <div class="col-md-12">
+				   
+							
+							<div class="col-md-6">   
+                           <br> <br>
+                        
+                             <button id="updateAccount" class="btn btn-primary" onclick="App.updateAccount()">update Account</button>
+							</div>
+                  </div>
+                </div>
+            </div>
+	</div>
+                     
+    </div>  	
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</html>
